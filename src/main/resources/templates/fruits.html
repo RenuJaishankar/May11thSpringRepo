@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div>
+
+    <div class="is-flex">
+        <div class="is-card">
+            <span>
+                element
+            </span>
+        </div>
+    </div>
+    <h1>
+        This html file works.
+    </h1>
+    <ul>
+        <li th:each=" fruit : ${fruits}">
+            <h1 th:text="${fruit.name}">
+
+            </h1>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
